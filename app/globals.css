@@ -1,26 +1,77 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
+  --op-paars: #51273f;
+  --op-blauw: #12acdf;
+  --op-blauw-dark: #0e97c4;
+  --op-groen: #179e9a;
+  --op-surface: #fafafa;
+  --border: #e8e8e8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-op-paars: var(--op-paars);
+  --color-op-blauw: var(--op-blauw);
+  --color-op-blauw-dark: var(--op-blauw-dark);
+  --color-op-groen: var(--op-groen);
+  --color-op-body: #333333;
+  --color-op-surface: var(--op-surface);
+  --color-border: var(--border);
+  --font-heading: var(--font-poppins);
+  --font-tagline: var(--font-lora);
+  --font-body: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-poppins), sans-serif;
+    font-weight: 600;
+    color: var(--op-paars);
+  }
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-logos {
+  animation: scroll-logos 75s linear infinite;
+}
+
+.animate-scroll-logos:hover {
+  animation-play-state: paused;
+}
+
+/* Scroll-triggered fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in--visible {
+  opacity: 1;
+  transform: translateY(0);
 }
