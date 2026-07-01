@@ -104,7 +104,7 @@ export const clientLogos: ClientLogo[] = [
   { src: "/images/logos/5.ISPT.png", alt: "ISPT" },
   { src: "/images/logos/6.PostNL.png", alt: "PostNL" },
   { src: "/images/logos/7.Segula.png", alt: "Segula" },
-  { src: "/images/logos/8.MinisterievanI&W.png", alt: "Ministerie van I&W" },
+  { src: "/images/logos/8.MinisterievanIW.png", alt: "Ministerie van I&W" },
   { src: "/images/logos/9.provincieOverijssel.png", alt: "Provincie Overijssel" },
   { src: "/images/logos/10.GeospatialWorldForum.png", alt: "Geospatial World Forum" },
   { src: "/images/logos/11.WorldAnimalProtection.png", alt: "World Animal Protection" },
