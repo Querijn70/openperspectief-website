@@ -22,18 +22,18 @@ export default function ClientsSection() {
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((item, index) => (
             <FadeIn key={index} delay={index * 100}>
-              <figure className="flex h-full flex-col rounded-2xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                <svg
-                  className="mb-5 h-8 w-8 text-op-blauw/30"
-                  fill="currentColor"
-                  viewBox="0 0 32 32"
+              <figure className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-md ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-10">
+
+                {/* Decoratief openingsaanhalingsteken */}
+                <span
+                  className="mb-3 block font-heading text-5xl font-bold leading-none text-op-blauw"
                   aria-hidden="true"
                 >
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
+                  &ldquo;
+                </span>
 
-                <blockquote className="flex-1 text-sm leading-relaxed text-op-body/75 italic">
-                  &ldquo;{item.quote}&rdquo;
+                <blockquote className="flex-1 text-base italic leading-relaxed text-op-body/80">
+                  {item.quote}
                 </blockquote>
 
                 <figcaption className="mt-8 flex items-center gap-4">
@@ -41,11 +41,11 @@ export default function ClientsSection() {
                     {item.initials}
                   </div>
                   <div>
-                    <p className="font-heading text-sm font-semibold text-op-paars">
+                    <p className="font-heading text-sm font-bold text-op-paars">
                       {item.name}
                     </p>
-                    <p className="text-xs text-op-body/55">
-                      {item.title}, {item.organization}
+                    <p className="text-xs text-op-body/50">
+                      {[item.title, item.organization].filter(Boolean).join(", ")}
                     </p>
                   </div>
                 </figcaption>
@@ -57,9 +57,6 @@ export default function ClientsSection() {
         {/* Logo-carrousel */}
         <FadeIn>
           <div className="mt-20 border-t border-border pt-16">
-            <p className="mb-10 text-center text-xs font-semibold uppercase tracking-widest text-op-body/40">
-              In samenwerking met
-            </p>
             <ClientCarousel />
           </div>
         </FadeIn>

@@ -24,7 +24,7 @@ export default function Logo({
         priority
       />
       {showTagline && (
-        <span className="font-tagline text-sm italic text-op-paars">
+        <span className="font-slogan text-sm italic tracking-wide text-op-groen">
           op organiseren en vernieuwen
         </span>
       )}

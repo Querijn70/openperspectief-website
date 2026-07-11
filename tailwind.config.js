@@ -12,7 +12,8 @@ module.exports = {
       fontFamily: {
         heading: ["var(--font-poppins)", "sans-serif"],
         tagline: ["var(--font-lora)", "serif"],
-        body: ["var(--font-inter)", "sans-serif"],
+        slogan: ["var(--font-cormorant)", "serif"],
+        body: ["var(--font-nunito)", "sans-serif"],
       },
     },
   },

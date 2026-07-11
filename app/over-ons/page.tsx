@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Play } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Timeline from "@/components/Timeline";
 import FadeIn from "@/components/FadeIn";
 import { milestones } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Over ons",
+  title: "Persoonlijk",
 };
 
 export default function OverOnsPage() {
   return (
     <>
-      <PageHero title="Over ons" />
+      <PageHero title="Persoonlijk" subtitle="Achtergrond & Ervaring" />
 
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -36,7 +37,7 @@ export default function OverOnsPage() {
               <h3 className="mt-8 font-heading text-lg font-semibold text-op-groen">
                 Persoonlijk
               </h3>
-              <div className="mt-4 space-y-5 text-base leading-relaxed text-op-body/75">
+              <div className="mt-4 space-y-5 text-base lg:text-lg leading-relaxed text-op-body/75">
                 <p>
                   Wat mij drijft is de verscheidenheid van mensen en organisaties
                   en de mogelijkheden die dit biedt. Ik ben onder de indruk van
@@ -73,6 +74,29 @@ export default function OverOnsPage() {
           </FadeIn>
           <FadeIn delay={100}>
             <Timeline items={milestones} />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Video-sectie */}
+      <section className="bg-white pb-24 sm:pb-32">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <FadeIn>
+            {/* TODO: Vervang deze placeholder door de echte video URL */}
+            {/* Gebruik bijvoorbeeld: <iframe src="https://www.youtube.com/embed/VIDEO_ID" className="absolute inset-0 h-full w-full" allowFullScreen /> */}
+            <div
+              className="relative w-full overflow-hidden rounded-xl shadow-lg aspect-video"
+              style={{ background: "linear-gradient(135deg, #51273f 0%, #2d1524 100%)" }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-black/30 backdrop-blur-sm">
+                  <Play className="h-10 w-10 translate-x-0.5 text-white" fill="white" />
+                </div>
+              </div>
+            </div>
+            <p className="mt-4 text-center text-sm text-op-body/40">
+              Promotievideo volgt binnenkort
+            </p>
           </FadeIn>
         </div>
       </section>

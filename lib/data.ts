@@ -94,6 +94,7 @@ export const clients = [
 export type ClientLogo = {
   src: string;
   alt: string;
+  large?: boolean;
 };
 
 export const clientLogos: ClientLogo[] = [
@@ -108,6 +109,11 @@ export const clientLogos: ClientLogo[] = [
   { src: "/images/logos/9.provincieOverijssel.png", alt: "Provincie Overijssel" },
   { src: "/images/logos/10.GeospatialWorldForum.png", alt: "Geospatial World Forum" },
   { src: "/images/logos/11.WorldAnimalProtection.png", alt: "World Animal Protection" },
+  { src: "/images/logos/NSPD.png", alt: "NSPD" },
+  { src: "/images/logos/CROW.png", alt: "CROW" },
+  { src: "/images/logos/GemeenteAlmere.png", alt: "Gemeente Almere", large: true },
+  { src: "/images/logos/GemeenteBodegraven.png", alt: "Gemeente Bodegraven", large: true },
+  { src: "/images/logos/ProvincieFlevoland.png", alt: "Provincie Flevoland" },
 ];
 
 export const sustainabilityColumns = [
@@ -266,6 +272,45 @@ export const publications: Publication[] = [
   },
 ].sort((a, b) => b.sortKey - a.sortKey);
 
+export type Project = {
+  title: string;
+  description: string;
+  bullets?: string[];
+  partner: string;
+};
+
+export const projects: Project[] = [
+  {
+    title: "Ontwikkelen innovatieleercyclus en procesbegeleiding digital twin-fieldlabs",
+    description:
+      "OpenPerspectief heeft samen met het netwerk van Geonovum een investeringsvoorstel geschreven om digital twins breed toegankelijk te maken via een nationale digital twin infrastructuur voor de fysieke leefomgeving. Een van de doelen is de kennis die in fieldlabs wordt opgedaan en de vaardigheden die worden opgebouwd te delen. OpenPerspectief heeft hiervoor een innovatie-leercyclus ontwikkeld en begeleidt die fieldlabs bij het in praktijk brengen hiervan.",
+    bullets: [
+      "Het realiseren van publieke waarde",
+      "Het ontwikkelen en gebruiken van digital twins",
+      "Het samenwerkingsproces van publieke- en private fieldlabpartners met hun stakeholders",
+    ],
+    partner: "Geonovum",
+  },
+  {
+    title: "Spreker en docent bij het Geospatial World Forum",
+    description:
+      "Het Geospatial World Forum is een wereldwijd kennisnetwerk dat als doel heeft het belang en de toepassing van geografische locatiedata en -informatie voor maatschappelijke vraagstukken en innovaties binnen uiteenlopende branches te vergroten. Geonovum is een van de partners van het GWF. OpenPerspectief representeert Geonovum op het GWF op het expertisegebied ‘multi-stakeholder partnerships and models for collaborative workflows’.",
+    partner: "Geospatial World Forum",
+  },
+  {
+    title: "Evaluatie-onderzoek en advisering samenwerkingsverband",
+    description:
+      "Het GKG is een regionaal samenwerkingsverband van regionale overheden, onderwijsinstellingen en bedrijven. De organisaties streven ernaar hun individuele en de publiek toegankelijke databronnen voor elkaar beschikbaar te maken en te verbinden. Bij de start hebben zij afgesproken de effectiviteit en de resultaten van de onderlinge samenwerking periodiek te evalueren, op basis waarvan zij besluiten of en op welke wijze zij hun activiteiten van hun samenwerking worden voortgezet. OpenPerspectief voert deze evaluaties op bestuurlijk en tactisch niveau uit en adviseert over de vervolgstappen.",
+    partner: "GKG",
+  },
+  {
+    title: "Haalbaarheidsonderzoek en procesbegeleiding samenwerkingsverband",
+    description:
+      "Het SVB-BGT is een landelijk samenwerkingsverband van overheden en bedrijven met een publieke taak. Na 5 jaar succesvol te hebben samengewerkt en het beoogde projectresultaat te hebben neergezet, was het samenwerkingsverband in een impasse geraakt. OpenPerspectief heeft op de verschillende betrokken echelons een onderzoek uitgevoerd naar de oorzaken van de impasse, de belangen, het draagvlak en de mogelijkheden voor een eventuele doorstart. Ook heeft OpenPerspectief het besluitvormingsproces begeleid evenals het vormgeven van een andere samenwerkingsvorm.",
+    partner: "SVB-BGT",
+  },
+];
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/expertise", label: "Expertise" },
@@ -283,26 +328,26 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Hier komt een quote van de klant over de samenwerking met OpenPerspectief en het resultaat dat is behaald.",
-    name: "Naam Achternaam",
-    title: "Functietitel",
-    organization: "Organisatienaam",
-    initials: "NA",
+      "Rosemarie heeft ons samenwerkingsverband enorm geholpen uit een impasse te komen. Na een jarenlange succesvolle samenwerking, stond het SVB-BGT voor een nieuwe fase, waar de samenwerkende organisaties verschillend in zaten. Door de aanpak van Rosemarie kwam er ruimte om alles op tafel te leggen en werden er besluiten genomen hoe de partners verder konden. Rosemarie is als geen ander in staat om uiteenlopende belangen weer samen te brengen.",
+    name: "Jan Bruijn",
+    title: "Directeur",
+    organization: "SVB-BGT",
+    initials: "JB",
   },
   {
     quote:
-      "Hier komt een quote van de klant over de aanpak van Rosemarie en wat het heeft opgeleverd voor de organisatie.",
-    name: "Naam Achternaam",
-    title: "Functietitel",
-    organization: "Organisatienaam",
-    initials: "NA",
+      "Met ons Gegevensknooppunt Groningen proberen we een forse meerwaarde te bereiken door de enorme hoeveelheid aan data in het openbaar bestuur effectief te benutten. Een kwestie van sociale innovatie, waarbij de wijsheid van Cruijf ons goed van pas komt: 'Je ziet het, als je het doorhebt'. En Rosemarie helpt ons daarbij op uitstekende wijze!",
+    name: "Adriaan Hoogendoorn",
+    title: "GKG-bestuur, burgemeester Midden-Groningen",
+    organization: "",
+    initials: "AH",
   },
   {
     quote:
-      "Hier komt een quote van de klant over de expertise en begeleiding die zij heeft ontvangen van OpenPerspectief.",
-    name: "Naam Achternaam",
-    title: "Functietitel",
-    organization: "Organisatienaam",
-    initials: "NA",
+      "Gedurende een aantal jaar werk ik samen met OpenPerspectief, o.a. vanuit ISPT. Door Rosemarie's transparante, analytische en empathische begeleiding weet zij vertrouwensrelaties in samenwerkingsprojecten zorgvuldig op te bouwen en te bestendigen, gecombineerd met een effectieve focus op de gemeenschappelijke doelen. Daarnaast monitort en begeleidt zij de onvermijdelijke dynamiek die zich tijdens het samenwerkingsproject voordoet, zodat veranderingen bij de samenwerkende partners tijdig worden benoemd en opnieuw worden ingepast in de intermenselijke projectgerelateerde relaties.",
+    name: "Wil Duivenvoorden",
+    title: "Eigenaar",
+    organization: "Smart Chain Consultancy",
+    initials: "WD",
   },
 ];

@@ -9,7 +9,7 @@ export default function ServicesSection() {
           <h2 className="mb-4 text-center font-heading text-3xl font-bold sm:text-4xl">
             Diensten
           </h2>
-          <p className="mx-auto mb-16 max-w-2xl text-center text-base leading-relaxed text-op-body/60">
+          <p className="mx-auto mb-16 max-w-2xl text-center text-base lg:text-lg leading-relaxed font-medium text-op-body/60">
             Van procesbegeleding tot simulaties — altijd gericht op duurzame
             resultaten.
           </p>
@@ -23,7 +23,7 @@ export default function ServicesSection() {
                 <h3 className="mb-3 font-heading text-lg font-semibold">
                   {service.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-op-body/70">
+                <p className="text-base lg:text-lg leading-relaxed text-op-body/70">
                   {service.description}
                 </p>
               </div>

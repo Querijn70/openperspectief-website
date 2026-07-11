@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/#contact"
-            className="hidden rounded-lg bg-op-blauw px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition-all duration-200 hover:scale-105 hover:bg-op-blauw-dark hover:shadow-md active:scale-100 md:inline-flex md:items-center"
+            className="hidden rounded-lg bg-op-blauw px-5 py-2.5 text-sm font-extrabold uppercase tracking-wider text-white shadow-sm transition-all duration-200 hover:scale-105 hover:bg-op-blauw-dark hover:shadow-md active:scale-100 md:inline-flex md:items-center"
           >
             Maak afspraak
           </Link>
@@ -80,7 +80,7 @@ export default function Header() {
               <Link
                 href="/#contact"
                 onClick={() => setOpen(false)}
-                className="flex w-full items-center justify-center rounded-lg bg-op-blauw px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-all duration-200 hover:bg-op-blauw-dark"
+                className="flex w-full items-center justify-center rounded-lg bg-op-blauw px-5 py-3 text-sm font-extrabold uppercase tracking-wider text-white transition-all duration-200 hover:bg-op-blauw-dark"
               >
                 Maak afspraak
               </Link>

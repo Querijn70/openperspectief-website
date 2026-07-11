@@ -12,14 +12,14 @@ export default function RecognizableSection() {
           <h2 className="mb-4 text-center font-heading text-3xl font-bold sm:text-4xl">
             Herkenbaar?
           </h2>
-          <p className="mx-auto mb-16 max-w-2xl text-center text-base leading-relaxed text-op-body/60">
+          <p className="mx-auto mb-16 max-w-2xl text-center text-base lg:text-lg leading-relaxed font-medium text-op-body/60">
             Veel organisaties lopen tegen dezelfde uitdagingen aan in
             netwerksamenwerking.
           </p>
         </FadeIn>
 
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-20">
-          <FadeIn className="hidden lg:block">
+          <div className="hidden lg:block">
             <div className="overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5">
               <Image
                 src="/images/herkenbaar_foto.jpg"
@@ -29,7 +29,7 @@ export default function RecognizableSection() {
                 className="h-auto w-full object-cover"
               />
             </div>
-          </FadeIn>
+          </div>
 
           <FadeIn delay={150}>
             <Accordion items={accordionItems} />

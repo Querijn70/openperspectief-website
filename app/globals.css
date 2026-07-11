@@ -24,7 +24,8 @@
   --color-border: var(--border);
   --font-heading: var(--font-poppins);
   --font-tagline: var(--font-lora);
-  --font-body: var(--font-inter);
+  --font-slogan: var(--font-cormorant);
+  --font-body: var(--font-nunito);
 }
 
 html {
@@ -34,7 +35,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-nunito), system-ui, sans-serif;
 }
 
 @layer base {
@@ -64,7 +65,7 @@ body {
   animation-play-state: paused;
 }
 
-/* Scroll-triggered fade-in */
+/* Scroll-triggered fade-in (omhoog) */
 .fade-in {
   opacity: 0;
   transform: translateY(28px);
@@ -74,4 +75,36 @@ body {
 .fade-in--visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Page-hero load-animaties */
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: hero-enter 0.6s ease-out both;
+}
+
+.hero-sub {
+  animation: hero-enter 0.6s ease-out 0.3s both;
+}
+
+/* Scroll-triggered slide-in vanuit links */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left--visible {
+  opacity: 1;
+  transform: translateX(0);
 }

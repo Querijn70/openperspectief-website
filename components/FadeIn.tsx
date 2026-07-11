@@ -5,12 +5,19 @@ export default function FadeIn({
   children,
   className = "",
   delay = 0,
+  direction = "up",
+  threshold = 0.1,
 }: {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  direction?: "up" | "left";
+  threshold?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+
+  const baseClass = direction === "left" ? "slide-in-left" : "fade-in";
+  const visibleClass = direction === "left" ? "slide-in-left--visible" : "fade-in--visible";
 
   useEffect(() => {
     const el = ref.current;
@@ -21,12 +28,12 @@ export default function FadeIn({
       ([entry]) => {
         if (entry.isIntersecting) {
           timer = setTimeout(() => {
-            el.classList.add("fade-in--visible");
+            el.classList.add(visibleClass);
           }, delay);
           observer.unobserve(el);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      { threshold, rootMargin: "0px 0px -40px 0px" }
     );
     observer.observe(el);
 
@@ -34,10 +41,10 @@ export default function FadeIn({
       observer.disconnect();
       clearTimeout(timer);
     };
-  }, [delay]);
+  }, [delay, visibleClass, threshold]);
 
   return (
-    <div ref={ref} className={`fade-in ${className}`}>
+    <div ref={ref} className={`${baseClass} ${className}`}>
       {children}
     </div>
   );

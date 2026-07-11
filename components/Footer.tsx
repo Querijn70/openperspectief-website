@@ -35,7 +35,7 @@ export default function Footer() {
             <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider text-white">
               Contact
             </h3>
-            <ul className="space-y-3 text-sm text-white/80">
+            <ul className="space-y-3 text-base text-white/80">
               <li>
                 <a
                   href="tel:+31643950936"
@@ -60,7 +60,7 @@ export default function Footer() {
             <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider text-white">
               Volg ons
             </h3>
-            <ul className="space-y-3 text-sm text-white/80">
+            <ul className="space-y-3 text-base text-white/80">
               <li>
                 <a
                   href="#"
