@@ -56,24 +56,24 @@ export const accordionItems = [
 
 export const services = [
   {
-    title: "On the job proces begeleiding",
+    title: "On-the-job procesbegeleiding",
     description:
       "Bij het opstarten van of nieuw leven inblazen van bestaande samenwerkingsverbanden tussen publieke en commerciële organisaties",
   },
   {
-    title: "Hands on onderzoek en advies",
+    title: "Hands-on onderzoek en advies",
     description:
       "(Wetenschappelijk) onderzoek naar de haalbaarheid, legitimiteit en doorstart-mogelijkheden van startende en bestaande samenwerkingsverbanden",
   },
   {
-    title: "Inspiratieworkshops, masterclasses en lezingen",
+    title: "Integraal samenwerken met data en technologie",
     description:
-      "Over de dynamiek van en het effectief omgaan met asymmetrie in netwerksamenwerkingen",
+      "Complexe ruimtelijke opgaven vragen om integrale samenwerking: met alle betrokkenen, belangen en dynamiek die daarmee gepaard gaat. Tijdens de leergang leer je hoe je het integraal werken vormgeeft en hoe data en technologie ondersteunend kan zijn. Met de Innovatieleercyclus als kompas leer je stapsgewijs op een nieuwe manier te werken.",
   },
   {
-    title: "Simulaties en managementgames",
+    title: "Inspiratieworkshops, managementgames en lezingen",
     description:
-      "Het aan den lijve ervaren van wat het betekent om als publieke en commerciële organisaties samen te werken",
+      "Over de dynamiek van en het effectief omgaan met asymmetrie in netwerksamenwerkingen. Het aan den lijve ervaren van wat het betekent om als publieke en commerciële organisaties samen te werken.",
   },
 ];
 
@@ -349,5 +349,21 @@ export const testimonials: Testimonial[] = [
     title: "Eigenaar",
     organization: "Smart Chain Consultancy",
     initials: "WD",
+  },
+  {
+    quote:
+      "Met hulp van Open Perspectief hebben we de stap gezet van werken vanuit beleid naar opgavegericht integraal samenwerken met behulp van een digitale tweeling. Rosemarie begeleidde ons scherp, gestructureerd en tegelijk heel toegankelijk: zij wist de juiste mensen rond de tafel te krijgen, ons helpen beleid te vertalen naar concrete indicatoren en richting te geven om scenario's uit te kunnen werken samen met de Provincie Zuid-Holland en met Digital Twin als hulpmiddel. Daardoor is er niet alleen een stevige basis gelegd voor onze Digital Twin pilot, maar is ook de onderlinge samenwerking verder versterkt.",
+    name: "Susana Aparicio Lardies",
+    title: "Projectleider gebiedsontwikkeling",
+    organization: "Gemeente Bodegraven-Reeuwijk",
+    initials: "SA",
+  },
+  {
+    quote:
+      "Rosemarie is a very driven lady. She can lead change in an organisation while ensuring this is done in full governance and therefore ensuring the change is well understood by the teams. This brings positive results for the entire organisation and supplementary motivation of the teams. I had the pleasure to work with Rosemarie, and look forward to do it again in the future :-)",
+    name: "Yves de Beauregard",
+    title: "Managing Director Altran",
+    organization: "",
+    initials: "YB",
   },
 ];

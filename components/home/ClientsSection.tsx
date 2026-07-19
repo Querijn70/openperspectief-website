@@ -1,6 +1,6 @@
 import ClientCarousel from "../ClientCarousel";
+import TestimonialCarousel from "../TestimonialCarousel";
 import FadeIn from "@/components/FadeIn";
-import { testimonials } from "@/lib/data";
 
 export default function ClientsSection() {
   return (
@@ -18,41 +18,10 @@ export default function ClientsSection() {
           </p>
         </FadeIn>
 
-        {/* Testimonial-kaarten */}
-        <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((item, index) => (
-            <FadeIn key={index} delay={index * 100}>
-              <figure className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-md ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-10">
-
-                {/* Decoratief openingsaanhalingsteken */}
-                <span
-                  className="mb-3 block font-heading text-5xl font-bold leading-none text-op-blauw"
-                  aria-hidden="true"
-                >
-                  &ldquo;
-                </span>
-
-                <blockquote className="flex-1 text-base italic leading-relaxed text-op-body/80">
-                  {item.quote}
-                </blockquote>
-
-                <figcaption className="mt-8 flex items-center gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-op-paars/10 text-sm font-bold text-op-paars">
-                    {item.initials}
-                  </div>
-                  <div>
-                    <p className="font-heading text-sm font-bold text-op-paars">
-                      {item.name}
-                    </p>
-                    <p className="text-xs text-op-body/50">
-                      {[item.title, item.organization].filter(Boolean).join(", ")}
-                    </p>
-                  </div>
-                </figcaption>
-              </figure>
-            </FadeIn>
-          ))}
-        </div>
+        {/* Testimonial-carrousel */}
+        <FadeIn>
+          <TestimonialCarousel />
+        </FadeIn>
 
         {/* Logo-carrousel */}
         <FadeIn>

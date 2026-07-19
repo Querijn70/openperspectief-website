@@ -2,23 +2,23 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-[70vh] items-center overflow-hidden pb-20 pt-16">
+    <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-op-paars pb-20 pt-16">
 
-      {/* Laag 1 — achtergrondfoto
-          object-position: 76% horizontaal (rechtsgericht, persoon in rechterhelft)
-                           28% verticaal (vrij hoog zodat hoofd + brug/mast zichtbaar zijn) */}
-      <Image
-        src="/images/Header_foto.jpg"
-        alt=""
-        fill
-        className="object-cover object-[76%_28%] sm:object-[78%_30%]"
-        aria-hidden="true"
-        priority
-      />
+      {/* Laag 1 — achtergrondfoto (verborgen op mobiel, zichtbaar vanaf sm) */}
+      <div className="absolute inset-0 hidden sm:block">
+        <Image
+          src="/images/Header_foto.jpg"
+          alt=""
+          fill
+          className="object-cover object-[76%_28%] sm:object-[78%_30%]"
+          aria-hidden="true"
+          priority
+        />
+      </div>
 
-      {/* Laag 2 — paarse overlay 60% dekkend */}
+      {/* Laag 2 — paarse overlay 60% dekkend (alleen nodig naast de foto, vanaf sm) */}
       <div
-        className="absolute inset-0 z-10"
+        className="absolute inset-0 z-10 hidden sm:block"
         style={{ backgroundColor: "rgba(81, 39, 63, 0.60)" }}
       />
 

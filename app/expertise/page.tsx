@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
+import VideoSection from "@/components/expertise/VideoSection";
 import ProjectenSection from "@/components/expertise/ProjectenSection";
 import { publications } from "@/lib/data";
 
@@ -75,6 +76,8 @@ export default function ExpertisePage() {
           </div>
         </div>
       </section>
+
+      <VideoSection />
 
       <ProjectenSection />
     </>

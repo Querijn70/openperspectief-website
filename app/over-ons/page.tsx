@@ -86,7 +86,7 @@ export default function OverOnsPage() {
             {/* Gebruik bijvoorbeeld: <iframe src="https://www.youtube.com/embed/VIDEO_ID" className="absolute inset-0 h-full w-full" allowFullScreen /> */}
             <div
               className="relative w-full overflow-hidden rounded-xl shadow-lg aspect-video"
-              style={{ background: "linear-gradient(135deg, #51273f 0%, #2d1524 100%)" }}
+              style={{ backgroundColor: "#51273f" }}
             >
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="flex h-20 w-20 items-center justify-center rounded-full bg-black/30 backdrop-blur-sm">

@@ -7,31 +7,8 @@ export default function PageHero({ title, subtitle }: PageHeroProps) {
   return (
     <section
       className="relative overflow-hidden pb-28 pt-24 text-white sm:pb-36 sm:pt-32"
-      style={{
-        background: "linear-gradient(135deg, #51273f 0%, #3a1a2e 55%, #2d1524 100%)",
-      }}
+      style={{ backgroundColor: "#51273f" }}
     >
-      {/* Dot-grid textuurlaag */}
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
-        }}
-      />
-
-      {/* Decoratieve gloed rechtsboven — blauw */}
-      <div
-        className="absolute -right-40 -top-40 h-[480px] w-[480px] rounded-full"
-        style={{ background: "radial-gradient(circle, rgba(18,172,223,0.18) 0%, transparent 70%)" }}
-      />
-
-      {/* Decoratieve gloed linksonder — groen */}
-      <div
-        className="absolute -bottom-20 -left-20 h-80 w-80 rounded-full"
-        style={{ background: "radial-gradient(circle, rgba(23,158,154,0.14) 0%, transparent 70%)" }}
-      />
-
       {/* Content */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
