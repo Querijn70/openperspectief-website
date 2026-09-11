@@ -9,7 +9,7 @@ export default function RecognizableSection() {
     <section className="bg-op-surface py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
-          <h2 className="mb-4 text-center font-heading text-3xl font-bold sm:text-4xl">
+          <h2 className="mb-4 text-center font-heading text-3xl font-bold text-op-paars sm:text-4xl">
             Herkenbaar?
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-center text-base lg:text-lg leading-relaxed font-medium text-op-body/60">

@@ -5,7 +5,7 @@ const accentColors = ["border-op-blauw", "border-op-groen"];
 
 export default function ProjectenSection() {
   return (
-    <section className="bg-gray-50 py-24 sm:py-32">
+    <section className="bg-op-surface py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Sectietitel */}

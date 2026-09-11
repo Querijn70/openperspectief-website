@@ -32,14 +32,14 @@ export default function Footer() {
 
           {/* Kolom 1 — Contact */}
           <div>
-            <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider !text-white">
               Contact
             </h3>
-            <ul className="space-y-3 text-base text-white/80">
+            <ul className="space-y-3 text-base text-white">
               <li>
                 <a
                   href="tel:+31643950936"
-                  className="transition-colors hover:text-op-blauw"
+                  className="text-white transition-colors hover:text-op-blauw"
                 >
                   +31 643950936
                 </a>
@@ -47,7 +47,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@openperspectief.nl"
-                  className="transition-colors hover:text-op-blauw"
+                  className="text-white transition-colors hover:text-op-blauw"
                 >
                   info@openperspectief.nl
                 </a>
@@ -57,14 +57,14 @@ export default function Footer() {
 
           {/* Kolom 2 — Sociaal */}
           <div>
-            <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider !text-white">
               Volg ons
             </h3>
-            <ul className="space-y-3 text-base text-white/80">
+            <ul className="space-y-3 text-base text-white">
               <li>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 transition-colors hover:text-op-blauw"
+                  className="inline-flex items-center gap-2 text-white transition-colors hover:text-op-blauw"
                 >
                   <LinkedInIcon className="h-4 w-4" />
                   LinkedIn
@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 transition-colors hover:text-op-blauw"
+                  className="inline-flex items-center gap-2 text-white transition-colors hover:text-op-blauw"
                 >
                   <TwitterIcon className="h-4 w-4" />
                   Twitter

@@ -13,15 +13,15 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-op-paars: var(--op-paars);
-  --color-op-blauw: var(--op-blauw);
-  --color-op-blauw-dark: var(--op-blauw-dark);
-  --color-op-groen: var(--op-groen);
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+  --color-op-paars: #51273f;
+  --color-op-blauw: #12acdf;
+  --color-op-blauw-dark: #0e97c4;
+  --color-op-groen: #179e9a;
   --color-op-body: #333333;
-  --color-op-surface: var(--op-surface);
-  --color-border: var(--border);
+  --color-op-surface: #fafafa;
+  --color-border: #e8e8e8;
   --font-heading: var(--font-poppins);
   --font-tagline: var(--font-lora);
   --font-slogan: var(--font-cormorant);

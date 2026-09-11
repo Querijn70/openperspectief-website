@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "@/components/Button";
 
 export default function HeroSection() {
   return (
@@ -49,6 +50,10 @@ export default function HeroSection() {
         <p className="mt-6 font-heading text-xs font-normal tracking-widest text-white/75 sm:text-sm">
           Rosemarie Mijlhoff
         </p>
+
+        <div className="mt-10">
+          <Button href="#contact">MAAK AFSPRAAK</Button>
+        </div>
 
         </div>
       </div>

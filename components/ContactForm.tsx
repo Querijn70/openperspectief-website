@@ -9,7 +9,7 @@ export default function ContactForm() {
   }
 
   const fieldClass =
-    "w-full border-0 border-b-2 border-gray-200 bg-gray-50/80 px-0 py-3 text-base text-op-body transition-all duration-200 placeholder:text-op-body/30 focus:border-op-blauw focus:bg-white focus:outline-none";
+    "w-full border-0 border-b-2 border-border bg-op-surface px-0 py-3 text-base text-op-body transition-all duration-200 placeholder:text-op-body/30 focus:border-op-blauw focus:bg-white focus:outline-none focus:ring-2 focus:ring-op-blauw/20";
 
   const labelClass =
     "mb-2 block text-xs font-semibold uppercase tracking-wider text-op-body/50";
@@ -55,7 +55,7 @@ export default function ContactForm() {
       <div className="pt-2">
         <button
           type="submit"
-          className="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-op-blauw px-8 py-4 text-base font-semibold text-white shadow-md transition-all duration-200 hover:-translate-x-0.5 hover:shadow-lg active:translate-x-0 sm:w-auto"
+          className="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-op-blauw px-8 py-4 text-base font-semibold text-white shadow-md transition-all duration-200 hover:bg-op-blauw-dark hover:shadow-lg active:translate-x-0 sm:w-auto"
         >
           Verstuur bericht
           <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />

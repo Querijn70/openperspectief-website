@@ -6,6 +6,7 @@ module.exports = {
         "op-paars": "#51273f",
         "op-blauw": "#12acdf",
         "op-groen": "#179e9a",
+        "op-blauw-dark": "#0e97c4",
         "op-body": "#333333",
         "op-surface": "#fafafa",
       },

@@ -23,7 +23,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`border-b-2 pb-0.5 text-sm font-medium text-op-body transition-colors hover:text-op-blauw ${
+                className={`border-b-2 pb-0.5 text-sm font-medium text-op-paars transition-colors hover:text-op-blauw ${
                   active
                     ? "border-op-blauw text-op-blauw"
                     : "border-transparent"
@@ -45,7 +45,7 @@ export default function Header() {
 
           <button
             type="button"
-            className="rounded-lg p-2 text-op-body transition-colors hover:bg-op-surface md:hidden"
+            className="rounded-lg p-2 text-op-paars transition-colors hover:bg-op-surface md:hidden"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Menu sluiten" : "Menu openen"}
             aria-expanded={open}
@@ -68,7 +68,7 @@ export default function Header() {
                   className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-op-surface hover:text-op-blauw ${
                     active
                       ? "text-op-blauw underline decoration-op-blauw underline-offset-4"
-                      : "text-op-body"
+                      : "text-op-paars"
                   }`}
                 >
                   {link.label}

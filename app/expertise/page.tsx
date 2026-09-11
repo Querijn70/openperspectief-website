@@ -28,11 +28,9 @@ export default function ExpertisePage() {
           </FadeIn>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {publications.map((pub, index) => {
-              const isBlue = index % 2 === 0;
-              return (
-                <FadeIn key={pub.link} delay={(index % 3) * 80}>
-                  <article className={`group relative flex h-full flex-col overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg border-t-4 ${isBlue ? "border-op-blauw" : "border-op-groen"}`}>
+            {publications.map((pub, index) => (
+              <FadeIn key={pub.link} delay={(index % 3) * 80}>
+                  <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     {/* Decoratief aanhalingsteken */}
                     <span
@@ -44,7 +42,7 @@ export default function ExpertisePage() {
 
                     <div className="flex flex-1 flex-col p-6">
                       {/* Datum badge */}
-                      <time className={`inline-flex self-start rounded-full px-3 py-1 text-xs font-semibold tracking-widest ${isBlue ? "bg-op-blauw/10 text-op-blauw" : "bg-op-groen/10 text-op-groen"}`}>
+                      <time className="inline-flex self-start rounded-full bg-op-groen px-3 py-1 text-xs font-semibold tracking-widest text-white">
                         {pub.date}
                       </time>
 
@@ -63,16 +61,15 @@ export default function ExpertisePage() {
                         href={pub.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-op-blauw transition-all duration-200 hover:translate-x-1 hover:underline"
+                        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-op-blauw transition-all duration-200 hover:underline"
                       >
                         Lees meer
                         <ArrowRight className="h-4 w-4" />
                       </a>
                     </div>
                   </article>
-                </FadeIn>
-              );
-            })}
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>

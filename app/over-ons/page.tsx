@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Play } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Timeline from "@/components/Timeline";
 import FadeIn from "@/components/FadeIn";
@@ -31,7 +30,7 @@ export default function OverOnsPage() {
             </FadeIn>
 
             <FadeIn delay={150}>
-              <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+              <h2 className="font-heading text-3xl font-bold text-op-paars sm:text-4xl">
                 Rosemarie Mijlhoff
               </h2>
               <h3 className="mt-8 font-heading text-lg font-semibold text-op-groen">
@@ -68,7 +67,7 @@ export default function OverOnsPage() {
       <section className="bg-op-surface py-24 sm:py-32">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="mb-12 text-center font-heading text-3xl font-bold sm:text-4xl">
+            <h2 className="mb-12 text-center font-heading text-3xl font-bold text-op-paars sm:text-4xl">
               Mijlpalen
             </h2>
           </FadeIn>
@@ -80,23 +79,16 @@ export default function OverOnsPage() {
 
       {/* Video-sectie */}
       <section className="bg-white pb-24 sm:pb-32">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[800px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            {/* TODO: Vervang deze placeholder door de echte video URL */}
-            {/* Gebruik bijvoorbeeld: <iframe src="https://www.youtube.com/embed/VIDEO_ID" className="absolute inset-0 h-full w-full" allowFullScreen /> */}
-            <div
-              className="relative w-full overflow-hidden rounded-xl shadow-lg aspect-video"
-              style={{ backgroundColor: "#51273f" }}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-black/30 backdrop-blur-sm">
-                  <Play className="h-10 w-10 translate-x-0.5 text-white" fill="white" />
-                </div>
-              </div>
+            <div className="relative w-full overflow-hidden rounded-xl shadow-lg" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                src="https://www.youtube.com/embed/iEvKpuMPNjQ"
+                className="absolute inset-0 h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
-            <p className="mt-4 text-center text-sm text-op-body/40">
-              Promotievideo volgt binnenkort
-            </p>
           </FadeIn>
         </div>
       </section>

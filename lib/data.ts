@@ -68,7 +68,7 @@ export const services = [
   {
     title: "Integraal samenwerken met data en technologie",
     description:
-      "Complexe ruimtelijke opgaven vragen om integrale samenwerking: met alle betrokkenen, belangen en dynamiek die daarmee gepaard gaat. Tijdens de leergang leer je hoe je het integraal werken vormgeeft en hoe data en technologie ondersteunend kan zijn. Met de Innovatieleercyclus als kompas leer je stapsgewijs op een nieuwe manier te werken.",
+      "Complexe maatschappelijke vraagstukken vragen om integrale samenwerking, met alle betrokkenen, belangen en dynamiek die daarmee gepaard gaat. Tijdens de procesbegeleiding en leergang die wij aanbieden, leer je hoe je het integraal werken vormgeeft en hoe data en technologie ondersteunend kunnen zijn. Met de Innovatieleercyclus als kompas leer je stapsgewijs over discipline- en organisatiegrenzen heen samen te werken.",
   },
   {
     title: "Inspiratieworkshops, managementgames en lezingen",

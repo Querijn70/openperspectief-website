@@ -9,7 +9,7 @@ export default function ClientsSection() {
 
         {/* Titel */}
         <FadeIn>
-          <h2 className="mb-4 text-center font-heading text-3xl font-bold sm:text-4xl">
+          <h2 className="mb-4 text-center font-heading text-3xl font-bold text-op-paars sm:text-4xl">
             Klantervaringen
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-center text-base leading-relaxed text-op-body/60">
