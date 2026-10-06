@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Play } from "lucide-react";
+import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 const BASE_SRC = "https://www.youtube.com/embed/eFNMWpMJEys";
@@ -28,6 +29,18 @@ const chapters = [
 export default function VideoSection() {
   const [activeSrc, setActiveSrc] = useState(BASE_SRC);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [coverVisible, setCoverVisible] = useState(true);
+
+  function handleCoverClick() {
+    setActiveSrc(`${BASE_SRC}?autoplay=1`);
+    setCoverVisible(false);
+  }
+
+  function handleChapterClick(chapter: (typeof chapters)[0], i: number) {
+    setActiveSrc(`${chapter.src}&autoplay=1`);
+    setActiveIndex(i);
+    setCoverVisible(false);
+  }
 
   return (
     <section className="bg-op-surface py-24 sm:py-32">
@@ -43,14 +56,44 @@ export default function VideoSection() {
               className="relative overflow-hidden rounded-xl shadow-lg"
               style={{ paddingBottom: "56.25%" }}
             >
-              <iframe
-                key={activeSrc}
-                src={activeSrc}
-                title="Rosemarie Mijlhoff in de media"
-                className="absolute inset-0 h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              {coverVisible ? (
+                <button
+                  onClick={handleCoverClick}
+                  className="group absolute inset-0 h-full w-full"
+                  aria-label="Video afspelen"
+                >
+                  <Image
+                    src="/images/PlaceholderRosemarieVideo.png"
+                    alt="Video preview: Rosemarie Mijlhoff in de media"
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Donkere overlay bij hover */}
+                  <div className="absolute inset-0 bg-black/0 transition-colors duration-200 group-hover:bg-black/20" />
+                  {/* Play-knop */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-black/50 transition-transform duration-200 group-hover:scale-110">
+                      <svg
+                        className="h-8 w-8 translate-x-0.5 text-white"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              ) : (
+                <iframe
+                  key={activeSrc}
+                  src={activeSrc}
+                  title="Rosemarie Mijlhoff in de media"
+                  className="absolute inset-0 h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
           </div>
 
@@ -59,10 +102,7 @@ export default function VideoSection() {
             {chapters.map((chapter, i) => (
               <button
                 key={chapter.src}
-                onClick={() => {
-                  setActiveSrc(chapter.src);
-                  setActiveIndex(i);
-                }}
+                onClick={() => handleChapterClick(chapter, i)}
                 className="group flex flex-col gap-2 rounded-xl bg-white p-5 text-left shadow-sm ring-1 ring-black/5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
                 style={{
                   borderLeft: `3px solid ${chapter.accentColor}`,

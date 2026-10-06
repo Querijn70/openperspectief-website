@@ -11,18 +11,6 @@ function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
-function TwitterIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
 
 export default function Footer() {
   return (
@@ -58,25 +46,18 @@ export default function Footer() {
           {/* Kolom 2 — Sociaal */}
           <div>
             <h3 className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider !text-white">
-              Volg ons
+              Media
             </h3>
             <ul className="space-y-3 text-base text-white">
               <li>
                 <a
-                  href="#"
+                  href="https://nl.linkedin.com/in/rosemariemijlhoff"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-white transition-colors hover:text-op-blauw"
                 >
                   <LinkedInIcon className="h-4 w-4" />
                   LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 text-white transition-colors hover:text-op-blauw"
-                >
-                  <TwitterIcon className="h-4 w-4" />
-                  Twitter
                 </a>
               </li>
             </ul>
