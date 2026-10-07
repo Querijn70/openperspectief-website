@@ -214,7 +214,7 @@ export const publications: Publication[] = [
     title: "Koorddansen met asymmetrie",
     description:
       "Omgaan met ongelijksoortigheid en ongelijkwaardigheid in een netwerksamenwerking (proefschrift)",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/20211102-PS_Rosemarie_digitaal_logo_abstract.pdf",
+    link: "/pdfs/Koorddansen-met-asymmetrie.pdf",
   },
   {
     date: "Juli 2019",
@@ -222,14 +222,14 @@ export const publications: Publication[] = [
     title: "Kijk naar netwerk, niet naar ervaring",
     description:
       "Een omroep die zich organiseert als netwerk, sluit beter bij het hedendaagse kijkerspubliek (Het Parool)",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/20190711-artikel_kijk-naar-netwerk-niet-naar-ervaring_c-amsterdam-PAROOL.pdf",
+    link: "/pdfs/Kijk-naar-netwerk.pdf",
   },
   {
     date: "Januari 2019",
     sortKey: 201901,
     title: "Centrale regie en een community",
     description: "Sleutels voor een succesvolle transitie",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/20190125-artikel_centrale-regie-en-community-iBESTUUR.pdf",
+    link: "/pdfs/Centrale-regie-en-een-community.pdf",
   },
   {
     date: "Juli/augustus 2015",
@@ -237,7 +237,7 @@ export const publications: Publication[] = [
     title: "Netwerk is maatwerk",
     description:
       "Van waarden, ambities en belangen: mogelijkheden voor een netwerk van zelfstandig adviseurs en consultancybureau",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/MO04_2015_artikel-netwerk-is-maatwerk_pp_42-58.pdf",
+    link: "/pdfs/Netwerk-is-maatwerk.pdf",
   },
   {
     date: "April 2015",
@@ -245,7 +245,7 @@ export const publications: Publication[] = [
     title: "Excellent HBO-onderwijs: een kwestie van cultuur",
     description:
       "Leidt normatieve sturing tot excellent onderwijs en oplossingen voor maatschappelijke vraagstukken?",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/MC_002-foto-vz.pdf",
+    link: "/pdfs/Excellent-HBO-onderwijs.pdf",
   },
   {
     date: "Maart 2014",
@@ -253,7 +253,7 @@ export const publications: Publication[] = [
     title: "Kwaliteit als identiteit",
     description:
       "Leiden ratings en prestatie-indicatoren daadwerkelijk tot betere kwaliteit van het onderwijs?",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/201403-artikel_kwaliteit-als-identiteit-THEMA.pdf",
+    link: "/pdfs/Kwaliteit-als-identiteit.pdf",
   },
   {
     date: "Juni 2012",
@@ -261,14 +261,14 @@ export const publications: Publication[] = [
     title: "Voorwoord — Socratisch coachen",
     description:
       "Over organisatieverandering, de heersende rationele manier van leidinggeven en leidinggeven met respect voor de waarden en belangen van mensen.",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/201206-voorwoord-socratisch-coachen-OPPT.pdf",
+    link: "/pdfs/Voorwoord-socratisch-coachen.pdf",
   },
   {
     date: "Mei 2012",
     sortKey: 201205,
     title: "Verandering in de provincie",
     description: "Een uniforme werkwijze succesvol invoeren",
-    link: "https://openperspectief.nl/wp-content/uploads/2022/07/201205-verandering-in-de-provincie_artikel-DE-GIDS.pdf",
+    link: "/pdfs/Verandering-in-de-provincie.pdf",
   },
 ].sort((a, b) => b.sortKey - a.sortKey);
 
