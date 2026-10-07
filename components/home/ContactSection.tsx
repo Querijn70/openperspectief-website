@@ -4,7 +4,7 @@ export default function ContactSection() {
     <section
       id="contact"
       className="py-24 sm:py-32"
-      style={{ background: "linear-gradient(135deg, rgba(81,39,63,0.05) 0%, #ffffff 55%)" }}
+      style={{ background: "linear-gradient(to bottom, #ffffff 0%, rgba(81,39,63,0.04) 60%, #ffffff 100%)" }}
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>

@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       {/* Copyrightbalk */}
-      <div className="border-t border-white/10 py-6">
+      <div className="py-6">
         <p className="text-center text-xs text-white/40">
           Copyright © 2022 OpenPerspectief. Webdesign en fotografie door Evanne Welling.
         </p>

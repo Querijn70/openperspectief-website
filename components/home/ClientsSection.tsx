@@ -25,7 +25,7 @@ export default function ClientsSection() {
 
         {/* Logo-carrousel */}
         <FadeIn>
-          <div className="mt-20 border-t border-border pt-16">
+          <div className="mt-20">
             <ClientCarousel />
           </div>
         </FadeIn>
